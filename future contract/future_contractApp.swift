@@ -10,6 +10,8 @@ import SwiftData
 
 @main
 struct future_contractApp: App {
+ 
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,7 +27,8 @@ struct future_contractApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreenView()
+                .darkModeBackground()
         }
         .modelContainer(sharedModelContainer)
     }

@@ -7,23 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D79F4842CE5429A009B2035 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F4832CE5429A009B2035 /* LineChart.swift */; };
+		1D79F4862CE542B5009B2035 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F4852CE542B5009B2035 /* ChartView.swift */; };
+		1D79F4882CE5CDF3009B2035 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F4872CE5CDF3009B2035 /* Theme.swift */; };
+		1D79F48A2CE5D2F1009B2035 /* ProjectDataChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F4892CE5D2F1009B2035 /* ProjectDataChart.swift */; };
+		1D79F48C2CE5D30E009B2035 /* ChartView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F48B2CE5D30E009B2035 /* ChartView2.swift */; };
+		1D79F48E2CE5DAFD009B2035 /* ChartView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F48D2CE5DAFD009B2035 /* ChartView3.swift */; };
+		1D84F77E2CC996FD002F6607 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D84F77D2CC996FD002F6607 /* WidgetKit.framework */; };
+		1D84F7802CC996FD002F6607 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D84F77F2CC996FD002F6607 /* SwiftUI.framework */; };
+		1D84F7832CC996FD002F6607 /* contractWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D84F7822CC996FD002F6607 /* contractWidgetBundle.swift */; };
+		1D84F7852CC996FD002F6607 /* contractWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D84F7842CC996FD002F6607 /* contractWidgetLiveActivity.swift */; };
+		1D84F7872CC996FD002F6607 /* contractWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D84F7862CC996FD002F6607 /* contractWidget.swift */; };
+		1D84F7892CC996FD002F6607 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D84F7882CC996FD002F6607 /* AppIntent.swift */; };
+		1D84F78B2CC996FE002F6607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D84F78A2CC996FE002F6607 /* Assets.xcassets */; };
+		1D84F78F2CC996FE002F6607 /* contractWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1D84F77B2CC996FD002F6607 /* contractWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1D97AEE42CA29DF900678917 /* future_contractApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AEE32CA29DF900678917 /* future_contractApp.swift */; };
 		1D97AEE62CA29DF900678917 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AEE52CA29DF900678917 /* ContentView.swift */; };
 		1D97AEE82CA29DF900678917 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AEE72CA29DF900678917 /* Item.swift */; };
 		1D97AEEA2CA29DFB00678917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D97AEE92CA29DFB00678917 /* Assets.xcassets */; };
 		1D97AEED2CA29DFB00678917 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D97AEEC2CA29DFB00678917 /* Preview Assets.xcassets */; };
+		1D97AEF62CA3FB0300678917 /* Block View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AEF52CA3FB0300678917 /* Block View.swift */; };
+		1D97AEF82CA6F27000678917 /* SustainableProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AEF72CA6F27000678917 /* SustainableProjectsView.swift */; };
+		1D97AEFA2CA6F76000678917 /* darkmoodModifiier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AEF92CA6F76000678917 /* darkmoodModifiier.swift */; };
+		1D97AEFC2CA6FC2C00678917 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AEFB2CA6FC2C00678917 /* BaseView.swift */; };
+		1D97AEFE2CA7078E00678917 /* ProjectStructureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AEFD2CA7078E00678917 /* ProjectStructureModel.swift */; };
+		1D97AF002CA70C5C00678917 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AEFF2CA70C5C00678917 /* SplashScreenView.swift */; };
+		1D97AF3D2CAA7B0700678917 /* My ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AF3C2CAA7B0700678917 /* My ProjectView.swift */; };
+		1D97AF3F2CAA7CB100678917 /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AF3E2CAA7CB100678917 /* color.swift */; };
+		1D97AF412CABD40000678917 /* theProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AF402CABD40000678917 /* theProjectsViewModel.swift */; };
+		1D97AF432CABD64E00678917 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AF422CABD64E00678917 /* profileView.swift */; };
+		1D97AF452CABE9A100678917 /* ProjectDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97AF442CABE9A100678917 /* ProjectDetailsView.swift */; };
+		1DDCCBC22CD51CA80081CBAD /* analysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDCCBC12CD51CA80081CBAD /* analysisView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1D84F78D2CC996FE002F6607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D97AED82CA29DF900678917 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D84F77A2CC996FD002F6607;
+			remoteInfo = contractWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D84F7902CC996FE002F6607 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1D84F78F2CC996FE002F6607 /* contractWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1D79F4832CE5429A009B2035 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		1D79F4852CE542B5009B2035 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		1D79F4872CE5CDF3009B2035 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1D79F4892CE5D2F1009B2035 /* ProjectDataChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDataChart.swift; sourceTree = "<group>"; };
+		1D79F48B2CE5D30E009B2035 /* ChartView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView2.swift; sourceTree = "<group>"; };
+		1D79F48D2CE5DAFD009B2035 /* ChartView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView3.swift; sourceTree = "<group>"; };
+		1D84F77B2CC996FD002F6607 /* contractWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = contractWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D84F77D2CC996FD002F6607 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1D84F77F2CC996FD002F6607 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1D84F7822CC996FD002F6607 /* contractWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractWidgetBundle.swift; sourceTree = "<group>"; };
+		1D84F7842CC996FD002F6607 /* contractWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		1D84F7862CC996FD002F6607 /* contractWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contractWidget.swift; sourceTree = "<group>"; };
+		1D84F7882CC996FD002F6607 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		1D84F78A2CC996FE002F6607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D84F78C2CC996FE002F6607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D97AEE02CA29DF900678917 /* future contract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "future contract.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D97AEE32CA29DF900678917 /* future_contractApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = future_contractApp.swift; sourceTree = "<group>"; };
 		1D97AEE52CA29DF900678917 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D97AEE72CA29DF900678917 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1D97AEE92CA29DFB00678917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D97AEEC2CA29DFB00678917 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D97AEF52CA3FB0300678917 /* Block View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Block View.swift"; sourceTree = "<group>"; };
+		1D97AEF72CA6F27000678917 /* SustainableProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SustainableProjectsView.swift; sourceTree = "<group>"; };
+		1D97AEF92CA6F76000678917 /* darkmoodModifiier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = darkmoodModifiier.swift; sourceTree = "<group>"; };
+		1D97AEFB2CA6FC2C00678917 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		1D97AEFD2CA7078E00678917 /* ProjectStructureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStructureModel.swift; sourceTree = "<group>"; };
+		1D97AEFF2CA70C5C00678917 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		1D97AF3C2CAA7B0700678917 /* My ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "My ProjectView.swift"; sourceTree = "<group>"; };
+		1D97AF3E2CAA7CB100678917 /* color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
+		1D97AF402CABD40000678917 /* theProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = theProjectsViewModel.swift; sourceTree = "<group>"; };
+		1D97AF422CABD64E00678917 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
+		1D97AF442CABE9A100678917 /* ProjectDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailsView.swift; sourceTree = "<group>"; };
+		1DDCCBC12CD51CA80081CBAD /* analysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = analysisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D84F7782CC996FD002F6607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D84F7802CC996FD002F6607 /* SwiftUI.framework in Frameworks */,
+				1D84F77E2CC996FD002F6607 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D97AEDD2CA29DF900678917 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +120,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D79F43A2CE531F7009B2035 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1D97AEFD2CA7078E00678917 /* ProjectStructureModel.swift */,
+				1D79F4892CE5D2F1009B2035 /* ProjectDataChart.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1D79F43B2CE53207009B2035 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1D97AF402CABD40000678917 /* theProjectsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1D79F43D2CE5321C009B2035 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D97AEFF2CA70C5C00678917 /* SplashScreenView.swift */,
+				1D97AEE52CA29DF900678917 /* ContentView.swift */,
+				1D97AF422CABD64E00678917 /* profileView.swift */,
+				1D79F4852CE542B5009B2035 /* ChartView.swift */,
+				1D79F48B2CE5D30E009B2035 /* ChartView2.swift */,
+				1D79F48D2CE5DAFD009B2035 /* ChartView3.swift */,
+				1D97AF3C2CAA7B0700678917 /* My ProjectView.swift */,
+				1D97AEF72CA6F27000678917 /* SustainableProjectsView.swift */,
+				1D97AF442CABE9A100678917 /* ProjectDetailsView.swift */,
+				1D97AEF52CA3FB0300678917 /* Block View.swift */,
+				1DDCCBC12CD51CA80081CBAD /* analysisView.swift */,
+				1D97AEFB2CA6FC2C00678917 /* BaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D79F43E2CE5324C009B2035 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1D97AF3E2CAA7CB100678917 /* color.swift */,
+				1D79F4832CE5429A009B2035 /* LineChart.swift */,
+				1D79F4872CE5CDF3009B2035 /* Theme.swift */,
+				1D97AEF92CA6F76000678917 /* darkmoodModifiier.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1D84F77C2CC996FD002F6607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D84F77D2CC996FD002F6607 /* WidgetKit.framework */,
+				1D84F77F2CC996FD002F6607 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D84F7812CC996FD002F6607 /* contractWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1D84F7822CC996FD002F6607 /* contractWidgetBundle.swift */,
+				1D84F7842CC996FD002F6607 /* contractWidgetLiveActivity.swift */,
+				1D84F7862CC996FD002F6607 /* contractWidget.swift */,
+				1D84F7882CC996FD002F6607 /* AppIntent.swift */,
+				1D84F78A2CC996FE002F6607 /* Assets.xcassets */,
+				1D84F78C2CC996FE002F6607 /* Info.plist */,
+			);
+			path = contractWidget;
+			sourceTree = "<group>";
+		};
 		1D97AED72CA29DF900678917 = {
 			isa = PBXGroup;
 			children = (
 				1D97AEE22CA29DF900678917 /* future contract */,
+				1D84F7812CC996FD002F6607 /* contractWidget */,
+				1D84F77C2CC996FD002F6607 /* Frameworks */,
 				1D97AEE12CA29DF900678917 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				1D97AEE02CA29DF900678917 /* future contract.app */,
+				1D84F77B2CC996FD002F6607 /* contractWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,7 +212,10 @@
 			isa = PBXGroup;
 			children = (
 				1D97AEE32CA29DF900678917 /* future_contractApp.swift */,
-				1D97AEE52CA29DF900678917 /* ContentView.swift */,
+				1D79F43E2CE5324C009B2035 /* Utilities */,
+				1D79F43D2CE5321C009B2035 /* View */,
+				1D79F43B2CE53207009B2035 /* ViewModel */,
+				1D79F43A2CE531F7009B2035 /* model */,
 				1D97AEE72CA29DF900678917 /* Item.swift */,
 				1D97AEE92CA29DFB00678917 /* Assets.xcassets */,
 				1D97AEEB2CA29DFB00678917 /* Preview Content */,
@@ -73,6 +234,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1D84F77A2CC996FD002F6607 /* contractWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D84F7932CC996FE002F6607 /* Build configuration list for PBXNativeTarget "contractWidgetExtension" */;
+			buildPhases = (
+				1D84F7772CC996FD002F6607 /* Sources */,
+				1D84F7782CC996FD002F6607 /* Frameworks */,
+				1D84F7792CC996FD002F6607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = contractWidgetExtension;
+			productName = contractWidgetExtension;
+			productReference = 1D84F77B2CC996FD002F6607 /* contractWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		1D97AEDF2CA29DF900678917 /* future contract */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D97AEF02CA29DFB00678917 /* Build configuration list for PBXNativeTarget "future contract" */;
@@ -80,10 +258,12 @@
 				1D97AEDC2CA29DF900678917 /* Sources */,
 				1D97AEDD2CA29DF900678917 /* Frameworks */,
 				1D97AEDE2CA29DF900678917 /* Resources */,
+				1D84F7902CC996FE002F6607 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1D84F78E2CC996FE002F6607 /* PBXTargetDependency */,
 			);
 			name = "future contract";
 			productName = "future contract";
@@ -100,6 +280,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					1D84F77A2CC996FD002F6607 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					1D97AEDF2CA29DF900678917 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -119,11 +302,20 @@
 			projectRoot = "";
 			targets = (
 				1D97AEDF2CA29DF900678917 /* future contract */,
+				1D84F77A2CC996FD002F6607 /* contractWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1D84F7792CC996FD002F6607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D84F78B2CC996FE002F6607 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D97AEDE2CA29DF900678917 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,19 +328,110 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1D84F7772CC996FD002F6607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D84F7872CC996FD002F6607 /* contractWidget.swift in Sources */,
+				1D84F7892CC996FD002F6607 /* AppIntent.swift in Sources */,
+				1D84F7852CC996FD002F6607 /* contractWidgetLiveActivity.swift in Sources */,
+				1D84F7832CC996FD002F6607 /* contractWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D97AEDC2CA29DF900678917 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1D97AEE62CA29DF900678917 /* ContentView.swift in Sources */,
+				1D97AEF62CA3FB0300678917 /* Block View.swift in Sources */,
+				1D97AF002CA70C5C00678917 /* SplashScreenView.swift in Sources */,
+				1D97AF412CABD40000678917 /* theProjectsViewModel.swift in Sources */,
+				1D79F4842CE5429A009B2035 /* LineChart.swift in Sources */,
+				1D97AF452CABE9A100678917 /* ProjectDetailsView.swift in Sources */,
+				1D79F48E2CE5DAFD009B2035 /* ChartView3.swift in Sources */,
+				1D97AEFE2CA7078E00678917 /* ProjectStructureModel.swift in Sources */,
+				1D97AEF82CA6F27000678917 /* SustainableProjectsView.swift in Sources */,
 				1D97AEE82CA29DF900678917 /* Item.swift in Sources */,
+				1D79F4882CE5CDF3009B2035 /* Theme.swift in Sources */,
+				1D79F4862CE542B5009B2035 /* ChartView.swift in Sources */,
+				1D97AEFC2CA6FC2C00678917 /* BaseView.swift in Sources */,
+				1D79F48A2CE5D2F1009B2035 /* ProjectDataChart.swift in Sources */,
+				1DDCCBC22CD51CA80081CBAD /* analysisView.swift in Sources */,
+				1D79F48C2CE5D30E009B2035 /* ChartView2.swift in Sources */,
+				1D97AF3F2CAA7CB100678917 /* color.swift in Sources */,
+				1D97AF432CABD64E00678917 /* profileView.swift in Sources */,
+				1D97AEFA2CA6F76000678917 /* darkmoodModifiier.swift in Sources */,
+				1D97AF3D2CAA7B0700678917 /* My ProjectView.swift in Sources */,
 				1D97AEE42CA29DF900678917 /* future_contractApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1D84F78E2CC996FE002F6607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D84F77A2CC996FD002F6607 /* contractWidgetExtension */;
+			targetProxy = 1D84F78D2CC996FE002F6607 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1D84F7912CC996FE002F6607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY8982A7D7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = contractWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = contractWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Twq.future-contract.contractWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D84F7922CC996FE002F6607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY8982A7D7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = contractWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = contractWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Twq.future-contract.contractWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1D97AEEE2CA29DFB00678917 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -271,6 +554,7 @@
 		1D97AEF12CA29DFB00678917 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +584,7 @@
 		1D97AEF22CA29DFB00678917 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -329,6 +614,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D84F7932CC996FE002F6607 /* Build configuration list for PBXNativeTarget "contractWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D84F7912CC996FE002F6607 /* Debug */,
+				1D84F7922CC996FE002F6607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1D97AEDB2CA29DF900678917 /* Build configuration list for PBXProject "future contract" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
