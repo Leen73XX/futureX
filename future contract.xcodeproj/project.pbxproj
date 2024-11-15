@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D42DB4C2CE7C08D005C2AC6 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D42DB4B2CE7C08D005C2AC6 /* Tips.swift */; };
+		1D42DBD32CE7EA38005C2AC6 /* analysisView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D42DBD22CE7EA38005C2AC6 /* analysisView2.swift */; };
 		1D79F4842CE5429A009B2035 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F4832CE5429A009B2035 /* LineChart.swift */; };
 		1D79F4862CE542B5009B2035 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F4852CE542B5009B2035 /* ChartView.swift */; };
 		1D79F4882CE5CDF3009B2035 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F4872CE5CDF3009B2035 /* Theme.swift */; };
 		1D79F48A2CE5D2F1009B2035 /* ProjectDataChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F4892CE5D2F1009B2035 /* ProjectDataChart.swift */; };
 		1D79F48C2CE5D30E009B2035 /* ChartView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F48B2CE5D30E009B2035 /* ChartView2.swift */; };
 		1D79F48E2CE5DAFD009B2035 /* ChartView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F48D2CE5DAFD009B2035 /* ChartView3.swift */; };
+		1D79F5162CE6911B009B2035 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D79F5152CE6911B009B2035 /* ContentView2.swift */; };
 		1D84F77E2CC996FD002F6607 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D84F77D2CC996FD002F6607 /* WidgetKit.framework */; };
 		1D84F7802CC996FD002F6607 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D84F77F2CC996FD002F6607 /* SwiftUI.framework */; };
 		1D84F7832CC996FD002F6607 /* contractWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D84F7822CC996FD002F6607 /* contractWidgetBundle.swift */; };
@@ -65,12 +68,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D42DB4B2CE7C08D005C2AC6 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
+		1D42DBD22CE7EA38005C2AC6 /* analysisView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = analysisView2.swift; sourceTree = "<group>"; };
 		1D79F4832CE5429A009B2035 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
 		1D79F4852CE542B5009B2035 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		1D79F4872CE5CDF3009B2035 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		1D79F4892CE5D2F1009B2035 /* ProjectDataChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDataChart.swift; sourceTree = "<group>"; };
 		1D79F48B2CE5D30E009B2035 /* ChartView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView2.swift; sourceTree = "<group>"; };
 		1D79F48D2CE5DAFD009B2035 /* ChartView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView3.swift; sourceTree = "<group>"; };
+		1D79F5152CE6911B009B2035 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		1D84F77B2CC996FD002F6607 /* contractWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = contractWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D84F77D2CC996FD002F6607 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		1D84F77F2CC996FD002F6607 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -142,6 +148,7 @@
 			children = (
 				1D97AEFF2CA70C5C00678917 /* SplashScreenView.swift */,
 				1D97AEE52CA29DF900678917 /* ContentView.swift */,
+				1D79F5152CE6911B009B2035 /* ContentView2.swift */,
 				1D97AF422CABD64E00678917 /* profileView.swift */,
 				1D79F4852CE542B5009B2035 /* ChartView.swift */,
 				1D79F48B2CE5D30E009B2035 /* ChartView2.swift */,
@@ -151,6 +158,7 @@
 				1D97AF442CABE9A100678917 /* ProjectDetailsView.swift */,
 				1D97AEF52CA3FB0300678917 /* Block View.swift */,
 				1DDCCBC12CD51CA80081CBAD /* analysisView.swift */,
+				1D42DBD22CE7EA38005C2AC6 /* analysisView2.swift */,
 				1D97AEFB2CA6FC2C00678917 /* BaseView.swift */,
 			);
 			path = View;
@@ -161,6 +169,7 @@
 			children = (
 				1D97AF3E2CAA7CB100678917 /* color.swift */,
 				1D79F4832CE5429A009B2035 /* LineChart.swift */,
+				1D42DB4B2CE7C08D005C2AC6 /* Tips.swift */,
 				1D79F4872CE5CDF3009B2035 /* Theme.swift */,
 				1D97AEF92CA6F76000678917 /* darkmoodModifiier.swift */,
 			);
@@ -354,9 +363,11 @@
 				1D97AEF82CA6F27000678917 /* SustainableProjectsView.swift in Sources */,
 				1D97AEE82CA29DF900678917 /* Item.swift in Sources */,
 				1D79F4882CE5CDF3009B2035 /* Theme.swift in Sources */,
+				1D42DB4C2CE7C08D005C2AC6 /* Tips.swift in Sources */,
 				1D79F4862CE542B5009B2035 /* ChartView.swift in Sources */,
 				1D97AEFC2CA6FC2C00678917 /* BaseView.swift in Sources */,
 				1D79F48A2CE5D2F1009B2035 /* ProjectDataChart.swift in Sources */,
+				1D42DBD32CE7EA38005C2AC6 /* analysisView2.swift in Sources */,
 				1DDCCBC22CD51CA80081CBAD /* analysisView.swift in Sources */,
 				1D79F48C2CE5D30E009B2035 /* ChartView2.swift in Sources */,
 				1D97AF3F2CAA7CB100678917 /* color.swift in Sources */,
@@ -364,6 +375,7 @@
 				1D97AEFA2CA6F76000678917 /* darkmoodModifiier.swift in Sources */,
 				1D97AF3D2CAA7B0700678917 /* My ProjectView.swift in Sources */,
 				1D97AEE42CA29DF900678917 /* future_contractApp.swift in Sources */,
+				1D79F5162CE6911B009B2035 /* ContentView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,9 +411,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Twq.future-contract.contractWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -426,9 +442,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Twq.future-contract.contractWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -563,11 +583,13 @@
 				DEVELOPMENT_TEAM = AY8982A7D7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FuturXs;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,9 +597,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Twq.future-contract";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -593,11 +619,13 @@
 				DEVELOPMENT_TEAM = AY8982A7D7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FuturXs;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -605,9 +633,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Twq.future-contract";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

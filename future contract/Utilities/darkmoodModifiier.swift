@@ -14,7 +14,7 @@ struct DarkModeBackgroundModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .background(
-                colorScheme == .dark ? Color(red: 0.09, green: 0.16, blue: 0.09) : Color.white
+                Color(red: 0.09, green: 0.16, blue: 0.09)
             )
 //            .edgesIgnoringSafeArea(.all)
     }

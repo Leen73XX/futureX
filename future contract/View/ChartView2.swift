@@ -22,7 +22,7 @@ struct LineChartExampleView: View {
         Chart(data, id: \.type) { dataSeries in
             ForEach(dataSeries.Data) { data in
                 LineMark(x: .value("Year", data.year),
-                         y: .value("price in M", data.revenue))
+                         y: .value("percent", data.percent))
             }
             .foregroundStyle(by: .value("project", dataSeries.type))
             .symbol(by: .value("project", dataSeries.type))

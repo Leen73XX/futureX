@@ -24,8 +24,10 @@ struct Project {
     var potintialReturn1Icon: String
     var potintialReturn2Icon: String
     var potintialReturn3Icon: String
+    var CallGain : String
+    var PutGain: String
     
-    init(name: String, Objective: String, SuccessRate: Int, PotentialReturn1: String, PotentialReturn2: String, PotentialReturn3: String, potintialRisks: String, MitigationStrategy: String, BudgetDetail1: [Int : String], balance: Float, potintialReturn1Icon: String, potintialReturn2Icon: String, potintialReturn3Icon: String) {
+    init(name: String, Objective: String, SuccessRate: Int, PotentialReturn1: String, PotentialReturn2: String, PotentialReturn3: String, potintialRisks: String, MitigationStrategy: String, BudgetDetail1: [Int : String], balance: Float, potintialReturn1Icon: String, potintialReturn2Icon: String, potintialReturn3Icon: String, CallGain: String, PutGain: String) {
         self.name = name
         self.Objective = Objective
         self.SuccessRate = SuccessRate
@@ -39,6 +41,8 @@ struct Project {
         self.potintialReturn1Icon = potintialReturn1Icon
         self.potintialReturn2Icon = potintialReturn2Icon
         self.potintialReturn3Icon = potintialReturn3Icon
+        self.CallGain = CallGain
+        self.PutGain = PutGain
     }
 }
 

@@ -18,7 +18,7 @@ struct myProject: View {
                 VStack(alignment: .leading, spacing: 30){
                     
                     HStack{
-                        Text("My Projects").font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/).fontWeight(.bold).foregroundColor(colorScheme == .dark ? .white : .black)
+                        Text("My Projects").font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/).fontWeight(.bold).foregroundColor(.white )
                         Spacer()
                        
                     }
@@ -26,7 +26,7 @@ struct myProject: View {
                         HStack {
                             Image(systemName: "magnifyingglass").opacity(0.3)
                             Text("search").opacity(0.3)
-                            Spacer()}.padding().foregroundColor(colorScheme == .dark ? .white : .black)
+                            Spacer()}.padding().foregroundColor(.white)
                         
                     )
                     ScrollView{
@@ -39,7 +39,7 @@ struct myProject: View {
                                         ForEach(1..<Projects.count, id: \.self){ index in
                                           
                                             NavigationLink (destination:
-                                                                ProjectDetailsView(projectDisplay: Projects[index], isPayment: false, isCalled: false).navigationBarBackButtonHidden()
+                                                                ProjectDetailsView(projectDisplay: Projects[index], isPayment: false).navigationBarBackButtonHidden()
                                             )
                                             {
                                                 

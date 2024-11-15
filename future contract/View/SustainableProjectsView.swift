@@ -9,11 +9,7 @@ import Foundation
 import SwiftUI
 
 struct SustainableProjects: View {
-    @Environment(\.colorScheme) var colorScheme
     var Projects = [theProject().project1, theProject().project2,theProject().project3]
-    @State private var currentNumber: Double = 0
-    let targetNumber: Double = 1573.56 // Target number
-    let duration: TimeInterval = 2 // Duration in seconds
     
     var body: some View {
         
@@ -22,7 +18,7 @@ struct SustainableProjects: View {
                 VStack(alignment: .leading, spacing: 30){
                     
                     HStack{
-                        Text("Sustainable Projects").font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/).fontWeight(.bold).foregroundColor(colorScheme == .dark ? .white : .black)
+                        Text("Sustainable Projects").font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/).fontWeight(.bold).foregroundColor( .white )
                         Spacer()
                        
                     }
@@ -30,7 +26,7 @@ struct SustainableProjects: View {
                         HStack {
                             Image(systemName: "magnifyingglass").opacity(0.3)
                             Text("search").opacity(0.3)
-                            Spacer()}.padding().foregroundColor(colorScheme == .dark ? .white : .black)
+                            Spacer()}.padding().foregroundColor( .white )
                         
                     )
                     ScrollView{
@@ -41,7 +37,7 @@ struct SustainableProjects: View {
                                     VStack (spacing: 30){
                                         ForEach(0..<Projects.count, id: \.self) { index in
                                             NavigationLink (destination:
-                                                                ProjectDetailsView(projectDisplay: Projects[index], isPayment: true, isCalled: false).navigationBarBackButtonHidden()
+                                                                ProjectDetailsView(projectDisplay: Projects[index], isPayment: true).navigationBarBackButtonHidden()
                                             )
                                             {
                                                 

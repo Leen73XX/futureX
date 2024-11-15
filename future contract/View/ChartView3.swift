@@ -18,11 +18,11 @@ struct PieChartExampleView: View {
     
     
     var RECITotal: Double {
-        RECIData.reduce(0) { $0 + $1.revenue }
+        RECIData.reduce(0) { $0 + $1.percent }
     }
     
     var LearnChildTotal: Double {
-        LearnChildData.reduce(0) { $0 + $1.revenue }
+        LearnChildData.reduce(0) { $0 + $1.percent }
     }
     
     var data: [(type: String, amount: Double)] {
@@ -31,7 +31,7 @@ struct PieChartExampleView: View {
         ]
     }
     
-    var maxPet: String? {
+    var minData: String? {
         data.max { $0.amount < $1.amount }?.type
     }
     
@@ -43,7 +43,7 @@ struct PieChartExampleView: View {
                        angularInset: 2)
                 .cornerRadius(5)
                 .foregroundStyle(Color(red: 0.18, green: 1, blue: 0.91))
-                .opacity(dataItem.type == maxPet ? 1 : 0.5)
+                .opacity(dataItem.type == minData ? 1 : 0.5)
         }
         .frame(height: 200)
       

@@ -10,19 +10,18 @@ import Charts
 
 struct ChartData: Identifiable, Equatable {
     let type: String
-    let count: Double
+    let percent: Double
     
     var id: String { return type }
 }
 
 struct DynamicChartView: View {
     
-    let data = [ChartData(type: "RECI", count: 14678.0),
-                ChartData(type: "LEARN CHILD", count: 35867.9),
-                ChartData(type: "MY HOME", count: 23788.98)]
+    let data = [ChartData(type: "RECI", percent: 44.0),
+                ChartData(type: "LEARN CHILD", percent: 19.9)]
     
     var maxChartData: ChartData? {
-        data.max { $0.count < $1.count }
+        data.min { $0.percent < $1.percent }
     }
     
     var body: some View {
@@ -31,18 +30,13 @@ struct DynamicChartView: View {
             ForEach(data) { dataPoint in
                 
                 BarMark(x: .value("Type", dataPoint.type),
-                        y: .value("Population", dataPoint.count))
+                        y: .value("percent", dataPoint.percent))
                 .opacity(maxChartData == dataPoint ? 1 : 0.5)
                 .foregroundStyle(maxChartData == dataPoint ? Color.orange : Color.gray)
                 
                 
             }
-            RuleMark(y: .value("Average", 33000))
-                .foregroundStyle(.gray)
-                .annotation(position: .bottom,
-                            alignment: .bottomLeading) {
-                    Text("Budget: 35,000")
-                }
+         
         }
         .aspectRatio(1, contentMode: .fit)
         .padding()

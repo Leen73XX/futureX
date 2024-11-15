@@ -10,10 +10,9 @@ import SwiftUI
 import PassKit
 
 struct ProjectDetailsView :View {
-    @Environment(\.colorScheme) var colorScheme
     var projectDisplay : Project
     var isPayment : Bool
-    var isCalled: Bool
+
     var body: some View {
        
         NavigationView{
@@ -21,7 +20,7 @@ struct ProjectDetailsView :View {
                 VStack(alignment: .leading, spacing: 20){
                     
                     HStack{
-                        Text(projectDisplay.name).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).fontWeight(.bold).foregroundColor(colorScheme == .dark ? .white : .black)
+                        Text(projectDisplay.name).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).fontWeight(.bold).foregroundColor( .white)
                         
                        
                     }.padding(.horizontal)
@@ -30,14 +29,15 @@ struct ProjectDetailsView :View {
                             bigBlock(project: projectDisplay)
                             
                             VStack (alignment: .leading, spacing: 5){
-                                Text("Objectives:").font(.title2).fontWeight(.bold)
+                                Text("Objectives:").font(.title2).fontWeight(.bold).foregroundColor(.white)
                                 Text(projectDisplay.Objective)
+                                    .fontWeight(.bold).foregroundColor(.white)
                             }
                             Text("Success rate : %\(projectDisplay.SuccessRate)").fontWeight(.heavy).foregroundColor(.green)
                             
                             
                             VStack (alignment: .leading, spacing: 5) {
-                                Text("Potential returns").font(.title2).fontWeight(.bold)
+                                Text("Potential returns").font(.title2).fontWeight(.bold).fontWeight(.bold).foregroundColor(.white)
                                 
                             
                                 VStack (alignment:.leading ,spacing: 30){
@@ -46,16 +46,19 @@ struct ProjectDetailsView :View {
                                         VStack{
                                             Image(systemName: projectDisplay.potintialReturn1Icon).resizable().frame(width: 50.0, height: 50.0).foregroundColor(.accentColor)
                                             Text(projectDisplay.PotentialReturn1)
+                                                .fontWeight(.bold).foregroundColor(.white)
                                                 .font(.headline)
                                         }
                                         VStack{
                                             Image(systemName: projectDisplay.potintialReturn2Icon).resizable().frame(width: 50.0, height: 50.0).foregroundColor(.accentColor)
                                             Text(projectDisplay.PotentialReturn2)
+                                                .fontWeight(.bold).foregroundColor(.white)
                                                 .font(.headline)
                                         }
                                         VStack{
                                             Image(systemName: projectDisplay.potintialReturn3Icon).resizable().frame(width: 50.0, height: 35.0).foregroundColor(.accentColor)
                                             Text(projectDisplay.PotentialReturn3)
+                                                .fontWeight(.bold).foregroundColor(.white)
                                                 .font(.headline)
                                         }
                                     }
@@ -63,6 +66,7 @@ struct ProjectDetailsView :View {
                             }.padding(.vertical)
                             VStack (alignment: .leading){
                                 Text("Timeline")
+                                    .fontWeight(.bold).foregroundColor(.white)
                                     .font(.title2)
                                     .fontWeight(.bold)
                                 ZStack{
@@ -74,10 +78,11 @@ struct ProjectDetailsView :View {
                             VStack (alignment: .leading, spacing: 10){
                                 Text("Potintial Revenue:").font(.title).fontWeight(.bold).foregroundColor( Color(hex: "EDAF42"))
                                 Text(projectDisplay.potintialRisks)
+                                    .fontWeight(.bold).foregroundColor(.white)
                             }.padding(.top)
                             VStack (alignment: .leading, spacing: 10){
                                 Text("Mitigation strategy:").font(.title3).fontWeight(.bold).foregroundColor(.accentColor)
-                                Text(projectDisplay.MitigationStrategy)
+                                Text(projectDisplay.MitigationStrategy).fontWeight(.bold).foregroundColor(.white)
                             }.padding(.top)
                         } // Vstack
                         
@@ -95,15 +100,7 @@ struct ProjectDetailsView :View {
                             Spacer()
                         }.frame(height: 5)
                     } else {
-                        if isCalled{
-                            Rectangle()
-                                .cornerRadius(16)
-                                .frame(width: 100, height: 50)
-                                .foregroundColor(Color.accentColor).overlay(
-                                
-                                    Text("Call").fontWeight(.bold).foregroundColor(.white)
-                            )
-                        }
+                       
                     }
                 }.padding()
                 
@@ -141,5 +138,5 @@ struct ApplePayButton: UIViewRepresentable {
     }
 }
 #Preview {
-    ProjectDetailsView( projectDisplay: Project(name: "SADAYA", Objective: "kjhjgfcdxszrzxtcfygvuhbijn", SuccessRate: 89, PotentialReturn1: "koijhgfdsd", PotentialReturn2: "iuygftdse", PotentialReturn3: "kjhv hujybin", potintialRisks: "miuytfrdeswerftgyhjkoijuhgfdertyui", MitigationStrategy: "jbhuvuvhbd dbveiur erjkbfuir", BudgetDetail1: [20:"development"], balance: 400, potintialReturn1Icon: "dollarsign.circle",potintialReturn2Icon: "",potintialReturn3Icon: ""), isPayment: true, isCalled: true)
+    ProjectDetailsView( projectDisplay: Project(name: "SADAYA", Objective: "Reducing Homelessness in Paris by 50% \n - in case of success you will receive an additional 25% profit. \n - in case of failure you will receive only 30% of the basic value of the contract.", SuccessRate: 89, PotentialReturn1: "koijhgfdsd", PotentialReturn2: "iuygftdse", PotentialReturn3: "kjhv hujybin", potintialRisks: "miuytfrdeswerftgyhjkoijuhgfdertyui", MitigationStrategy: "jbhuvuvhbd dbveiur erjkbfuir", BudgetDetail1: [20:"development"], balance: 400, potintialReturn1Icon: "dollarsign.circle",potintialReturn2Icon: "",potintialReturn3Icon: "", CallGain: "", PutGain: ""), isPayment: true)
 }

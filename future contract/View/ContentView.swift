@@ -11,11 +11,9 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var currentPage = 0
-    let randomNum : Double = Double.random(in: 99.99 ... 5000)
     var Projects = [theProject().project1, theProject().project2,theProject().project3]
-    @State private var currentNumber: Double = 0
     let targetNumber: Double = 1573.56 // Target number
-    let duration: TimeInterval = 1 // Duration in seconds
+    
     var body: some View{
 
             NavigationView{
@@ -31,8 +29,8 @@ struct ContentView: View {
                                         .frame(width: 50, height: 50)
                                         .clipped()
                                     VStack (alignment: .leading){
-                                        Text("Michael Tom").font(Font.custom("SF Pro Text", size: 17)).foregroundColor(colorScheme == .dark ? .white : .black)
-                                        Text("MichaelTom@").font(Font.custom("SF Pro Text", size: 10)).opacity(0.6).foregroundColor(colorScheme == .dark ? .white : .black)
+                                        Text("Michael Tom").font(Font.custom("SF Pro Text", size: 17)).foregroundColor(.white)
+                                        Text("MichaelTom@").font(Font.custom("SF Pro Text", size: 10)).opacity(0.6).foregroundColor(.white )
                                     }
                                     
                                 }
@@ -44,37 +42,16 @@ struct ContentView: View {
                                     .font(Font.custom("SF Pro Text", size: 20))
                             }
                         }.padding(.trailing ,10)
-                        RoundedRectangle(cornerRadius: 10).frame(width: .infinity,height: 30).opacity(0.1).overlay(
-                            HStack {
-                                Image(systemName: "magnifyingglass").opacity(0.3)
-                                Text("search").opacity(0.3)
-                                Spacer()}.padding().foregroundColor(colorScheme == .dark ? .white : .black)
-                            
-                        ).padding(.bottom, 10.0)
+                        SearchBarView()
                         ScrollView{
                             HStack{
-                                VStack (alignment:.leading ,spacing: 5){
-                                    
-                                    Text("Current Balance :").font(.callout).foregroundColor(colorScheme == .dark ? .white : .black)
-                                    HStack (spacing: 30){
-                                        Text("$ 3,678,230.84").font(.title).foregroundColor(colorScheme == .dark ? .white : .black)
-                                        VStack (spacing:0){
-                                            Text(" last visit").foregroundColor(.green )
-                                            Text(String(format: "+$ %.2f ", currentNumber))
-                                                .foregroundColor(.green)
-                                                .onAppear {
-                                                                   animateNumber(to: (randomNum), duration: duration)
-                                                               }
-                                     
-                                        }
-                                    }
-                                }
+                                CurrentBalanceView()
                                 Spacer()
                                
                             }
                             HStack{
                                 VStack(alignment: .leading){
-                                    Text("Sustainable Projects").font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/).fontWeight(.bold).foregroundColor(colorScheme == .dark ? .white : .black)
+                                    Text("Sustainable Projects").font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/).fontWeight(.bold).foregroundColor(.white )
                                     Text("trend now")
                                         .font(.callout).opacity(0.6)
                                 }
@@ -85,24 +62,11 @@ struct ContentView: View {
                                 
                             }.padding(.top)
                             
-                        
-                                
-                            TabView{
-                                    ForEach(0..<Projects.count, id: \.self) { index in
-                                        NavigationLink (destination:
-                                                            ProjectDetailsView(projectDisplay: Projects[index], isPayment: true, isCalled: false))
-                                        {
-                                            
-                                                bigBlock(project: Projects[index])
-                                            }
-                                        }
-                                }.frame( height: 300.0)
-                                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-                                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
+                            ProjectsTabView(Projects: Projects)
                                 
                             
                             HStack{
-                                Text("My Projects").font(.title2).fontWeight(.bold).foregroundColor(colorScheme == .dark ? .white : .black)
+                                Text("My Projects").font(.title2).fontWeight(.bold).foregroundColor( .white)
                                 Spacer()
                                 NavigationLink(destination:     myProject().navigationBarBackButtonHidden(false)) {
                                     Text("see all")
@@ -121,8 +85,8 @@ struct ContentView: View {
                                             }
                                         }
                                     }
-                                    
-                                }}
+                                }
+                            }
                         }
                         
                         
@@ -138,21 +102,10 @@ struct ContentView: View {
            formatter.maximumFractionDigits = 3 // Maximum number of decimal places
            return formatter.string(from: NSNumber(value: value)) ?? "\(value)"
        }
-    func animateNumber(to target: Double, duration: TimeInterval) {
-           let step = target / (duration * 60) // Assuming 60 FPS
-           var total: Double = 0
-           var currentStep: Double = 0
-           
-           Timer.scheduledTimer(withTimeInterval: 1/60, repeats: true) { timer in
-               total += step
-               currentNumber = min(total, target) // Ensure we don't go over the target
-               
-               if currentNumber >= target {
-                   timer.invalidate() // Stop the timer once we reach the target
-               }
-           }
-       }
+  
 }
+
+
 #Preview {
     ContentView()
     

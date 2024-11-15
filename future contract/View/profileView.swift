@@ -35,7 +35,7 @@ struct profile : View {
                         Spacer()
                         Text("$ 3,678,230.84").foregroundColor(.green)
                         Image(systemName: "chevron.right")
-                    }.padding().foregroundColor(colorScheme == .dark ? .white : .black)
+                    }.padding().foregroundColor(.white )
                     
                 )
                 
@@ -46,7 +46,7 @@ struct profile : View {
                         Spacer()
                         Text("+966500000000")
                         
-                    }.padding().foregroundColor(colorScheme == .dark ? .white : .black)
+                    }.padding().foregroundColor(.white )
                     
                 )
                 
