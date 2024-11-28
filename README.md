@@ -27,15 +27,17 @@ finanace
 
 ## Screenshots
 
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/75943af9-69c3-4fa7-80d2-963d82077c3a" width="150" />
-  <img src="https://github.com/user-attachments/assets/d75e1d02-57a1-4188-acf1-e6630842cbe5" width="150" />
+<p style="text-align:left;">
+  <img src="https://github.com/user-attachments/assets/75943af9-69c3-4fa7-80d2-963d82077c3a" width="150" style="margin-right:10px;" />
+  <img src="https://github.com/user-attachments/assets/d75e1d02-57a1-4188-acf1-e6630842cbe5" width="150" style="margin-right:10px;" />
   <img src="https://github.com/user-attachments/assets/cacedb47-60f8-4e02-8348-cfa2c4754d83" width="150" />
 </p>
 
 
+
 ## Installation
-** it is a Demo application as frontends only to shows the idea**
+** it is a Demo application as frontends only to shows the idea**.
+
 The app is not available on the App Store yet. 
 
 ### Requirements
@@ -61,8 +63,8 @@ Or open the project in Xcode
 
    
 ## Technologies Used
-SwiftUI: For building the app's user interface.
-WidgetKit: To display the project with the most revenue today on the home screen via a widget.
-TipKit: To provide helpful tips and guidance throughout the app.
-PassKit: To handle payments.
-Charts: To display different types of analysis.
+- SwiftUI: For building the app's user interface.
+- WidgetKit: To display the project with the most revenue today on the home screen via a widget.
+- TipKit: To provide helpful tips and guidance throughout the app.
+- PassKit: To handle payments.
+- Charts: To display different types of analysis.
